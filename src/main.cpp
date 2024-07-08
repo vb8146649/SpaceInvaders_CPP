@@ -11,11 +11,13 @@ int main()
     SetTargetFPS(60);
     while (WindowShouldClose() == false)
     {
+        UpdateMusicStream(game.music);
         game.Update();
         game.HandleInput();
         BeginDrawing();
         ClearBackground(backgroundColor);
         game.Draw();
+        game.Score();
         EndDrawing();
     }
     CloseWindow();

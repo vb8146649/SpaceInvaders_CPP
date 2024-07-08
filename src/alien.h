@@ -9,6 +9,7 @@ class Alien{
         Vector2 position;
         void Update(int direction);
         void Draw();
+        Rectangle getRect();
         int GetType();
     private:
 };

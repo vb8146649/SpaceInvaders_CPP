@@ -13,6 +13,14 @@ class Game{
         void HandleInput();
         void Update();
         void Draw();
+        Font font;
+        char scoreChar[10];
+        void Score();
+        int score;
+        void GameOver();
+        void GameReset();
+        bool gameOver;
+        Music music;
     private:
         Spaceship spaceship;
         vector<Obstacle> CreateObstacles();
@@ -21,6 +29,7 @@ class Game{
         vector<Alien> aliens;
         void AlienShootLaser();
         void MoveAliens();
+        void CheckForCollisions();
         void MoveDownAliens(int distance);
         vector<Laser> alienLasers;
         vector<Alien> CreateAliens();
@@ -28,4 +37,8 @@ class Game{
         constexpr static float alienLaserShootInterval=0.35;
         float timeLastAlienFired;
         MysteryShip mysteryship;
+        float mysteryShipSpawnInterval;
+        float timeLastSpawn;
+        Sound explosion;
+        Sound laserBeam;
 };

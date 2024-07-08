@@ -17,6 +17,11 @@ void Laser::Update()
     }
 }
 
+Rectangle Laser::getRect()
+{
+    return {position.x,position.y,4,15};
+}
+
 void Laser::Draw(){
     if(active){
         DrawRectangle(position.x,position.y,4,15,{243,216,63,255});

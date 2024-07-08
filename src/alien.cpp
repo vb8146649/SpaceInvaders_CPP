@@ -33,6 +33,11 @@ void Alien::Draw()
     DrawTextureV(alienImages[type-1],position,WHITE);
 }
 
+Rectangle Alien::getRect()
+{
+    return {position.x,position.y,float(alienImages[type-1].width),float(alienImages[type-1].height)};
+}
+
 int Alien::GetType(){
     return type;
 }

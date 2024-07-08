@@ -11,7 +11,8 @@ public:
     void Draw();
     void MoveLeft();
     void MoveRight();
-    void FireLaser();
+    void FireLaser(Sound laserBeam);
+    Rectangle getRect();
     vector<Laser> lasers;
 
 private:
