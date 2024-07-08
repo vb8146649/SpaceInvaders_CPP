@@ -13,6 +13,8 @@ raylib
 main
 game
 aliens
+spaceship
+
 # Ignore temporary and log files
 *.log
 *.tmp
