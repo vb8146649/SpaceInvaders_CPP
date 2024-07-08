@@ -11,6 +11,8 @@ raylib
 *.exe
 *.dsym
 main
+game
+aliens
 # Ignore temporary and log files
 *.log
 *.tmp
