@@ -54,4 +54,3 @@ This project serves as a basic and easy introduction to C++ projects. It was cho
 
 ---
 
-*Note: Replace `path/to/game_screenshot.png` with the actual path to your screenshot image.*
